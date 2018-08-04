@@ -281,7 +281,11 @@ Void gcCStack() {			/* Garbage collect elements off    */
 #if   (TERMIO_IO | SGTTY_IO | TERMIOS_IO)
 
 #if TERMIO_IO
+#ifdef __APPLE__
 #include <termios.h>
+#else
+#include <termio.h>
+#endif
 typedef  struct termio   TermParams;
 #define  getTerminal(tp) ioctl(fileno(stdin),TCGETA,&tp)
 #define  setTerminal(tp) ioctl(fileno(stdin),TCSETAF,&tp)
