@@ -28,38 +28,6 @@
 extern unsigned _stklen = 8000;		/* Allocate an 8k stack segment	   */
 #endif
 
-#if (ZTC | WATCOM)
-#include <stdlib.h>
-#include <signal.h>
-#include <fcntl.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#endif
-
-#if DJGPP
-#include <dos.h>
-#include <stdlib.h>
-#include <std.h>
-#include <signal.h>
-#include <fcntl.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#endif
-
-#if RISCOS
-#include <assert.h>
-#include <signal.h>
-#include "swis.h"
-#include "os.h"
-#endif
-
-#if ATARI
-#include <signal.h>
-#include <fcntl.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#endif
-
 /* --------------------------------------------------------------------------
  * Machine dependent code is used in each of:
  *	- The gofer interpreter		MACHDEP_GOFER
