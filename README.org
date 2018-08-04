@@ -10,5 +10,8 @@ As a result, the legacy =termio.h= header (from System V), included in most Linu
 to build on macOS. 
 For Apple systems, I've replaced =termio.h= with =termios.h=, its succesor. And a bunch of macros have been updated/replaced.
 
+* "radical" branch
+This branch may be unstable. Here, I'll remove all legacy components used. It should still work on most modern (read: vaguely POSIX-compliant) Linux systems.
+
 * Setup
 See [[file:INSTALL.org][installation/setup]]
