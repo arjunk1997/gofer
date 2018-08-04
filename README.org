@@ -6,9 +6,9 @@ I've only made a few changes to make the build pass on macOS.
 
 * Changes vs pugofer
 It seems macOS adheres to POSIX specifications more strictly than most Linux distros do.
-As a result, the legacy `termio.h` header (from System V), included in most Linux distros, is no longer included in macOS. As a result, pugofer fails
+As a result, the legacy =termio.h= header (from System V), included in most Linux distros, is no longer included in macOS. As a result, pugofer fails
 to build on macOS. 
-For Apple systems, I've replaced `termio.h` with `termios.h`, its succesor. And a bunch of macros have been updated/replaced.
+For Apple systems, I've replaced =termio.h= with =termios.h=, its succesor. And a bunch of macros have been updated/replaced.
 
 * Setup
 See [[file:INSTALL.org][installation/setup]]
