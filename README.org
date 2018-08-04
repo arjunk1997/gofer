@@ -4,7 +4,7 @@ I've only made a few changes to make the build pass on macOS.
 
 [[https://github.com/rusimody/gofer][Link to rusymody/gofer]]
 
-* Changes vs pugofer
+* Changes vs rusymody/pugofer
 It seems macOS adheres to POSIX specifications more strictly than most Linux distros do.
 As a result, the legacy =termio.h= header (from System V), included in most Linux distros, is no longer included in macOS. As a result, pugofer fails
 to build on macOS. 
