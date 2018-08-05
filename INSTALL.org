@@ -26,7 +26,7 @@ Above should make an executable called gofer. When you run it (at shell as:)
 #+BEGIN_SRC shell
 $ ./gofer
 #+END_SRC
-you should get an error that looks like this:
+you should get an error that looks like this =not anymore, I think I fixed this -arjunk1997=:
 #+BEGIN_SRC shell
 ERROR "pustd.pre": Unable to open file
 
